@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syeddinul Faiz Caniggia's Portfolio</title>
+  <style>
+    /* Gruvbox Theme Colors */
+    :root {
+      --bg: #282828;
+      --bg-soft: #3c3836;
+      --fg: #ebdbb2;
+      --red: #fb4934;
+      --green: #b8bb26;
+      --yellow: #fabd2f;
+      --blue: #83a598;
+      --purple: #d3869b;
+      --aqua: #8ec07c;
+      --gray: #a89984;
+      --orange: #fe8019;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: monospace;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid var(--yellow);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      color: var(--yellow);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--aqua);
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: var(--bg-soft);
+      border-left: 4px solid var(--orange);
+    }
+
+    .project {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--gray);
+    }
+
+    .project h3 {
+      color: var(--aqua);
+      margin-bottom: 5px;
+    }
+
+    .tech-list {
+      color: var(--purple);
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 10px;
+      border-top: 2px solid var(--yellow);
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--gray);
+    }
+
+    pre {
+      background-color: var(--bg);
+      padding: 10px;
+      border-left: 3px solid var(--green);
+      overflow-x: auto;
+    }
+
+    /* Retro elements */
+    .guestbook {
+      margin-top: 30px;
+      border: 1px solid var(--aqua);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .counter {
+      font-family: "Courier New", monospace;
+      background-color: var(--bg-soft);
+      color: var(--green);
+      padding: 2px 5px;
+      border: 1px solid var(--green);
+      margin-right: 5px;
+    }
+
+    /* 90s style navigation */
+    .nav-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .nav-button {
+      background-color: var(--bg-soft);
+      color: var(--yellow);
+      border: 2px outset var(--yellow);
+      padding: 5px 15px;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-button:hover {
+      border-style: inset;
+      color: var(--orange);
+    }
+
+    /* 90s badge */
+    .badge {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Syeddinul Faiz Caniggia</h1>
+    <p>Aspiring Software Engineering Web Developer</p>
+    <div class="badge">
+      <img src="[https://img.shields.io/badge/Web-Developer-blue](https://img.shields.io/badge/Web-Developer-blue)" alt="Web Developer Badge">
+    </div>
+  </header>
+
+  <div class="nav-buttons">
+    <a href="#about" class="nav-button">About</a>
+    <a href="#education" class="nav-button">Education</a>
+    <a href="#skills" class="nav-button">Skills</a>
+    <a href="#projects" class="nav-button">Projects</a>
+    <a href="#contact" class="nav-button">Contact</a>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      Aspiring Software Engineer with hands-on experience in full-stack development (React, Django) and a passion for optimizing systems. [cite: 3]
+      Key achievements include rapidly learning complex tools (CAD, Docker) to deliver projects like a surgical tool tracker for real-world use; [cite: 4]
+      independently mastering CAD under tight deadlines to deliver 5+ construction projects; [cite: 5]
+      and effectively collaborating across teams to resolve design conflicts between engineers, clients, and contractors. [cite: 6]
+    </p>
+    <pre>$ whoami
+aspiring_software_engineer</pre>
+  </div>
+
+  <div class="section" id="education">
+    <h2>Education</h2>
+    <p>
+      <strong>Bachelor of Computer Science Engineering</strong> [cite: 3]<br>
+      Pelita Bangsa University, Cikarang, Bekasi, Indonesia [cite: 3]<br>
+      GPA: 3.43 [cite: 3]<br>
+      Expected Graduation: December, 2027[cite: 3].
+    </p>
+  </div>
+
+  <div class="section" id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><span class="tech-list">Programming Languages:</span> C (Intermediate), Python (Intermediate), Javascript (Intermediate) [cite: 7]</li>
+      <li><span class="tech-list">Web Development Tools & Technologies:</span> HTML, CSS, React, Django [cite: 7]</li>
+      <li><span class="tech-list">Other Tools:</span> Git, Docker, SQL, Linux [cite: 8]</li>
+    </ul>
+  </div>
+
+  <div class="section" id="projects">
+    <h2>Projects</h2>
+    
+    <div class="project">
+      <h3>Surgery Tools Tracking System</h3>
+      <p>
+        Developed a web application to track surgical tool usage in a hospital setting. [cite: 9]
+        Utilized React for the front-end and SQL Server for database management, focusing on an intuitive user interface and efficient data handling. [cite: 9]
+        Improved website performance by 15% through database stored procedure optimization and normalization. [cite: 10]
+        Designed a user interface table for information display and incorporated a reporting feature. [cite: 11]
+      </p>
+      <p><span class="tech-list">Technologies:</span> React, SQL Server</p>
+    </div>
+
+    <div class="project">
+      <h3>Personal Website</h3>
+      <p>
+        Created a personal blog website using Django and styled it with Tailwind CSS. [cite: 12]
+        This project demonstrates writing and web development skills. [cite: 13]
+        Implemented SQLite to store blog data, enabling the sharing of experiences with new technologies. [cite: 13]
+      </p>
+      <p><span class="tech-list">Technologies:</span> Django, Tailwind CSS, SQLite</p>
+      <a href="#">Link →</a>
+    </div>
+
+    <div class="project">
+      <h3>Pomodoro Timer</h3>
+      <p>
+        Designed a Pomodoro timer application in C to help users manage study and break intervals. [cite: 14]
+        This project highlights understanding of time management techniques and programming fundamentals. [cite: 15]
+        Developed this application as a personal project to address time management challenges and received positive feedback from the social media community. [cite: 16, 17]
+      </p>
+      <p><span class="tech-list">Technologies:</span> C</p>
+      <a href="#">Link →</a>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Information</h2>
+    <p>Feel free to reach out to me through any of these channels:</p>
+    <ul>
+      <li>Email: <a href="mailto:Faiz.C4n@gmail.com">Faiz.C4n@gmail.com</a> [cite: 2]</li>
+      <li>GitHub: <a href="[https://github.com/RhapsodyInBlueMelody](https://github.com/RhapsodyInBlueMelody)">[github.com/RhapsodyInBlueMelody](https://github.com/RhapsodyInBlueMelody)</a> [cite: 2]</li>
+      <li>LinkedIn: <a href="[https://www.linkedin.com/in/syeddinul-faiz-c4n](https://www.linkedin.com/in/syeddinul-faiz-c4n)">[linkedin.com/in/syeddinul-faiz-c4n](https://linkedin.com/in/syeddinul-faiz-c4n)</a> [cite: 2]</li>
+    </ul>
+  </div>
+
+  <div class="guestbook">
+    <p>This site has been visited <span class="counter">42</span> times since 1995</p>
+    <p>Best viewed with Netscape Navigator</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Syeddinul Faiz Caniggia | Aspiring Software Engineering Web Developer | No JavaScript was harmed in the making of this website</p>
+    <p><small>Last updated: May 2025</small></p>
+  </footer>
+</body>
+</html>
