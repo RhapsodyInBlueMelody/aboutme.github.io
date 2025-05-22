@@ -1,0 +1,75 @@
+body,
+.font-mono {
+  font-family: "Fira Mono", "Menlo", "Monaco", "monospace";
+}
+
+.terminal-bg {
+  background-color: #282828;
+  /* Optional: noise overlay for extra retro */
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  background-blend-mode: multiply;
+}
+
+.terminal-window {
+  border: 2px solid #665c54;
+  border-radius: 8px;
+  background: #282828;
+  box-shadow: 0 0 24px 0 #1d2021;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.terminal-title {
+  color: #b8bb26;
+  font-size: 1rem;
+  background: #1d2021;
+  padding: 0.25rem 1rem;
+  border-bottom: 2px solid #665c54;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px 4px 0 0;
+  display: inline-block;
+}
+
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Gruvbox palette for Tailwind custom classes (if you add to tailwind.config.js) */
+.text-gruvbox-yellow {
+  color: #fabd2f;
+}
+.text-gruvbox-green {
+  color: #b8bb26;
+}
+.text-gruvbox-orange {
+  color: #fe8019;
+}
+.text-gruvbox-faded {
+  color: #ebdbb2;
+}
+.text-gruvbox-gray {
+  color: #928374;
+}
+.border-gruvbox-border {
+  border-color: #665c54;
+}
+
+/* Optional: for background pills */
+.bg-gruvbox-yellow {
+  background-color: #fabd2f;
+}
+.bg-gruvbox-green {
+  background-color: #b8bb26;
+}
+.bg-gruvbox-orange {
+  background-color: #fe8019;
+}
+.bg-gruvbox-gray {
+  background-color: #928374;
+}
